@@ -1,0 +1,15 @@
+﻿<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <div class="toggle-flag">
+                    <div (click)="switchLanguage('en')"><span class="flag-icon flag-icon-us flag-icon-squared"></span>English</div>
+                    <div (click)="switchLanguage('zh')"><span class="flag-icon flag-icon-cn flag-icon-squared"></span>Chinese</div>
+                </div>
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
